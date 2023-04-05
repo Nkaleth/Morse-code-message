@@ -28,10 +28,11 @@ GEM
     unicode-display_width (2.4.2)
 
 PLATFORMS
+  arm64-darwin-22
   x64-mingw-ucrt
 
 DEPENDENCIES
   rubocop!
 
 BUNDLED WITH
-   2.4.10
+   2.4.3
