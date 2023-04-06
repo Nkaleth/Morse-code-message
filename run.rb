@@ -1,15 +1,30 @@
-def decode_char(str)
-  morse_dict = {
-    'a' => '.-', 'b' => '-...', 'c' => '-.-.', 'd' => '-..', 'e' => '.', 'f' => '..-.', 'g' => '--.',
-    'h' => '....', 'i' => '..', 'j' => '.---', 'k' => '-.-', 'l' => '.-..', 'm' => '--', 'n' => '-.',
-    'o' => '---', 'p' => '.--.', 'q' => '--.-', 'r' => '.-.', 's' => '...', 't' => '-', 'u' => '..-',
-    'v' => '...-', 'w' => '.--', 'x' => '-..-', 'y' => '-.--', 'z' => '--..', ' ' => ' ', '1' => '.----',
-    '2' => '..---', '3' => '...--', '4' => '....-', '5' => '.....', '6' => '-....', '7' => '--...',
-    '8' => '---..', '9' => '----.', '0' => '-----'
+def decode_char(char)
+  morse_code = {
+    '.-' => 'a', '-...' => 'b', '-.-.' => 'c', '-..' => 'd', '.' => 'e',
+    '..-.' => 'f', '--.' => 'g', '....' => 'h', '..' => 'i', '.---' => 'j',
+    '-.-' => 'k', '.-..' => 'l', '--' => 'm', '-.' => 'n', '---' => 'o',
+    '.--.' => 'p', '--.-' => 'q', '.-.' => 'r',
+    '...' => 's', '-' => 't', '..-' => 'u', '...-' => 'v', '.--' => 'w',
+    '-..-' => 'x', '-.--' => 'y', '--..' => 'z'
   }
-  morse_dict.each do |k, v|
-    return k.upcase if str == v
-  end
+
+  morse_code[char]&.upcase
 end
 
-puts decode_char('--.')
+def decode_word(word)
+  arr_letters = word.split
+
+  result = ''
+  arr_letters.each { |letter| result += decode_char(letter) }
+  result
+end
+
+def decode(sentence)
+  arr_words = sentence.split('   ')
+
+  result = ''
+  arr_words.each { |word| result += "#{decode_word(word)} " }
+  result
+end
+
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
