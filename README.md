@@ -19,14 +19,14 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Decode a Morse code message] <a name="about-project"></a>
+# 📖 Decode a Morse code message <a name="about-project"></a>
 
-**[Decode a Morse code message]** is a ruby based program to decode morse messages.
+**Decode a Morse code message** is a ruby based program to decode morse messages.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,9 +44,9 @@
 ### Key Features <a name="key-features"></a>
 
 
--**[Run a program using the command line.]**
--**[Use Ruby syntax for basic programming operations.]**
--**[Use Ruby to solve basic coding challenges.]**
+- **Run a program using the command line.**
+- **Use Ruby syntax for basic programming operations.**
+- **Use Ruby to solve basic coding challenges.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [N/A]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,9 +153,9 @@ I would like to thank Microverse for the information provided to build this proj
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+<!-- FAQ -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 - **Can I use the project for any purpose?**
 
